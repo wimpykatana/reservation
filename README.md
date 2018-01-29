@@ -3,7 +3,7 @@ To run this app use npm (Node Packet Manager)
 * Development
 1. type "npm install" at terminal
 2. after finish install run "npm start" at terminal
-3. open http://localhost:3000/ in your browser
+3. open http://localhost:3005/ in your browser
 
 or
 
