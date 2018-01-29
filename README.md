@@ -1,5 +1,3 @@
-eunoia-reservations
-
 To run this app use npm (Node Packet Manager)
 
 * Development
