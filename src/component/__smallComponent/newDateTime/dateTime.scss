@@ -1,0 +1,94 @@
+.form-holder-3{
+  color: $black;
+  position: inherit;
+  .date-time-holder{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    p{
+      color: $black;
+      margin-top: 10px;
+    }
+
+    .value-date,
+    .value-time{
+      color: rgba(0,0,0,0.3);
+    }
+
+  }
+  .date-holder{
+    border-right: 1px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  .time-holder{
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+}
+
+.value-time-holder,
+.value-date-holder{
+  position: absolute;
+  background-color: #f5f5f5;
+  width: 100%;
+  z-index: 9;
+  left: -100%;
+  top: 200px;
+  overflow: scroll;
+  //height: 300px;
+}
+.value-date-holder{
+  & > div{
+    overflow: scroll;
+    height: 250px;
+  }
+  &:after{
+    content: '';
+    display: block;
+    height: 500px;
+    background-color: rgba(0,0,0,.5);
+  }
+}
+.value-time-holder{
+  min-height: 250px;
+  &:after{
+    content: '';
+    display: block;
+    height: 500px;
+    background-color: rgba(0,0,0,.5);
+  }
+}
+.active{
+  left: 0;
+}
+.close-btn{
+  padding: 0 0 5px 0;
+  span.notification-date{
+    padding: 0 10px;
+    background-color: darkred;
+    color: $white;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.react-datepicker{
+  width: 100%;
+  border: none;
+  background-color: rgba(255,255,255,0);
+  @include border-radius(0);
+  .react-datepicker__month-container{
+    width: 100%;
+    .react-datepicker__header{
+      border: none;
+      background-color: rgba(255,255,255,0);
+    }
+  }
+
+  .react-datepicker__day--selected{
+    @include border-radius(50%);
+    background-color: rgba(201,201,201,1);
+    color: $black;
+  }
+}

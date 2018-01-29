@@ -1,0 +1,14 @@
+@import "../../../css/global";
+
+.storeStatus{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: $red;
+}
+
+  input:disabled,
+  select:disabled{
+    //cursor: url(https://www.w3schools.com/cssref/smiley.gif),auto;
+    //cursor: url( http://sj.uploads.im/t/OXg5j.gif ),auto;
+    cursor: not-allowed;
+  }

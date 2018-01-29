@@ -1,0 +1,65 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin animate-time($time){
+  -webkit-animation-duration: $time;
+  -mos-animation-duration: $time;
+  -mw-animation-duration: $time;
+  animation-duration: $time;
+}
+
+@mixin gradient-top-bottom($topColor,$bottomColor){
+  background: $topColor; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($topColor, $bottomColor); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($topColor, $bottomColor); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($topColor, $bottomColor); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($topColor, $bottomColor); /* Standard syntax */
+}
+
+@mixin box-shadow($horizontalOffset,$verticalOffser,$blurRadius,$spreadRadius,$color){
+  -webkit-box-shadow: $horizontalOffset $verticalOffser $blurRadius $spreadRadius $color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    $horizontalOffset $verticalOffser $blurRadius $spreadRadius $color;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         $horizontalOffset $verticalOffser $blurRadius $spreadRadius $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+//  mixin media query ------------------------------------------------*/
+$mobile:(
+        potrait: "(max-width: 480px)",
+        lndscape: "(min-width: 481px) and (max-width: 767px)"
+);
+$tablet:(
+        potrait: "(min-width: 768px) and (max-width: 991px)",
+        lndscape: "(min-width: 992px) and (max-width: 1199px)"
+);
+$iphone4:(
+        all: "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)",
+        potrait: "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)",
+        lndscape: "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+);
+$iphone5:(
+        all: "only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)",
+        potrait: "only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)",
+        lndscape: "only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)"
+);
+$iphone6:(
+        all: "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)",
+        potrait: "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)",
+        lndscape: "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)"
+);
+$iphone6p:(
+        all: "only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)",
+        potrait: "only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)",
+        lndscape: "only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)"
+);
+$ipad:(
+        potrait: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)",
+        lndscape: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)"
+);
+
+$desktop:(
+        all: "only screen and (min-device-width: 1000px)"
+);

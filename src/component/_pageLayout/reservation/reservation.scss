@@ -1,0 +1,44 @@
+@import "../../../css/global";
+
+.react-datepicker-wrapper input{
+  margin-bottom: 0 !important;
+}
+
+.react-datepicker-wrapper{
+  width: 100%;
+  .react-datepicker__input-container{
+    width: 100%;
+  }
+}
+
+.reservation-holder{
+  margin: 0 20px;
+  padding: 0 10px 10px;
+  background: $white;
+  .btn.btn-eunoia{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 47px;
+    line-height: 41px;
+    font-size: 24px;
+    padding: 0;
+  }
+}
+
+.content-reservation{
+  padding-top: 50px;
+}
+
+.phone-number > div > div.phone-area-code-holder{
+  //margin-top: 5px;
+  background: $white;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.notification-holder{
+  margin: 10px 0;
+}

@@ -1,0 +1,32 @@
+.change-store-btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  padding: 8px 20px;
+  background: rgba(251,187,101,0.30);
+  color: $white;
+
+  @include border-radius(10px);
+  &:hover{
+    color: $white;
+  }
+}
+
+.action-holder{
+  background-color: $white;
+  color: $black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    text-align: center;
+
+    & > a > p{
+      color: $black;
+    }
+  }
+
+}

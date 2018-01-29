@@ -1,0 +1,151 @@
+.breadcrumb{
+  color: $black;
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: $fontPrimary;
+  height: 40px;
+  @media #{map-get($mobile, potrait)} {
+    padding: 10px 15px;
+  }
+  @media #{map-get($mobile, lndscape)} {
+    padding: 10px 15px;
+  }
+  @media #{map-get($tablet, potrait)} {
+    padding: 10px 15px;
+  }
+
+  &:before{
+    content: " ";
+    background-image: url("~/assets/image/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 12px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 0 8px 0 0;
+    transform:rotate(180deg);
+  }
+  span{
+    margin-top: 1px;
+    display: block;
+    font-size: 18px;
+    float: left;
+    color: $black;
+  }
+}
+
+.breadcrumb-holder{
+  background-color: #f5f5f5;
+}
+
+.form-group{
+  margin: 10px 0 0 0;
+  label{
+    color: $black;
+  }
+  input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0);
+    padding: 0;
+    height: 25px;
+    @include border-radius(0);
+    @include box-shadow(0,0,0,0,rgba(255,255,255,0));
+    color: rgba(0,0,0,0.3);
+    margin-top: 10px;
+    &:focus{
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid rgba(0,0,0,1);
+      animation-duration: 1.5s;
+      animation-name: border-fadeIn;
+      background-color: rgba(255,255,255,0);
+      @include border-radius(0);
+      @include box-shadow(0,0,0,0,rgba(255,255,255,0));
+      color: $black;
+    }
+  }
+
+  select{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0);
+    height: 30px;
+    margin-top: 10px;
+  }
+}
+
+.phoneArea{
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0);
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.phone-number-holder{
+  position: relative;
+  input{
+    &:focus + .phoneArea{
+      color: $black;
+      border-bottom: 1px solid rgba(0,0,0,1);
+      animation-duration: 1.5s;
+      animation-name: border-fadeIn;
+    }
+  }
+}
+
+.phone-group{
+    input{
+      width: 90%;
+      float: right;
+    }
+  .phoneArea{
+    width: 10%;
+    float: left;
+    margin-top: 10px;
+    height: 25px;
+    text-align: center;
+  }
+  &:after{
+    clear: both;
+    content: "";
+    height: 0;
+  }
+}
+
+@keyframes border-fadeIn {
+  from{
+    border-bottom: 1px solid rgba(0,0,0,0.1);;
+  }
+
+  to{
+    border-bottom: 1px solid rgba(0,0,0,1);
+  }
+}
+
+.title-page{
+  margin-top: 10px;
+
+  color: $black;
+  font-size: 32px;
+
+}
+.make-reservation-holder{
+  height: 100%;
+}
+
+.make-reservation-holder:after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}

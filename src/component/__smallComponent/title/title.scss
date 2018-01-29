@@ -1,0 +1,19 @@
+@import "../../../css/global";
+
+.title{
+  padding: 10px 0;
+  //background: rgba(216,216,216,0.60);
+  //border-top: 1px solid rgba(216,216,216,0.60);
+  //@include gradient-striped(rgb(0,0,0),45deg);
+  //@include gradient-directional(rgba(216,216,216,.6),rgba(255,255,255,.6),180deg);
+  h3 {
+    color: #333;
+    //text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 0;
+  }
+
+}
